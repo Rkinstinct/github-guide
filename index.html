@@ -84,7 +84,7 @@ pre{padding-top:42px}
 <span class="eyebrow">מדריך מעשי בעברית</span>
 <h1>גיטהאב <span class="grad">מא׳ עד ת׳</span></h1>
 <p class="sub">מהחשבון הראשון ועד עבודת צוות מלאה: ענפים, Pull Requests, Issues, אוטומציה, פרסום אתרים ואבטחה. בכל פרק מקרה שימוש, צעדים להעתקה, מה אמור לקרות, תרגיל ובוחן קצר. בסוף, איך מנהלים פרויקט Power BI בגיט.</p>
-
+<div class="hero-vid"><video autoplay muted loop playsinline preload="metadata" disablepictureinpicture><source src="media/_intro.mp4" type="video/mp4"></video></div>
 <div class="facts"><span><b>17</b> פרקים</span><span><b>51</b> שאלות בוחן</span><span><b>0</b> ידע קודם</span></div>
 <a class="cta" href="#intro">מתחילים מפרק 1</a>
 <details class="note"><summary>על המדריך והמקורות</summary><p>המדריך נכתב לפי התיעוד הרשמי של GitHub ושל Microsoft. מתחת לכל פרק יש קישורים למקורות. שמות הכפתורים והתפריטים באתר נשארו באנגלית, כמו שהם מופיעים בממשק. גיטהאב משנה את הממשק מדי פעם, ולכן ייתכן שמסך מסוים ייראה מעט שונה. מידע שלא אימתנו מול מקור מסומן בפרק עצמו.</p></details>
@@ -133,7 +133,7 @@ git config --global user.email &quot;you@example.com&quot;</code></pre></div></l
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>יש לכם פרויקט חדש, למשל פרויקט Power BI של המכירות. רוצים בית לקבצים שלו עם הסבר, ושלא יעלו אליו קבצים מיותרים.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p>ריפו חדש נוצר בלחיצה. מוסיפים לו <b>README</b> (דף הבית של הפרויקט, מוצג אוטומטית), <b>.gitignore</b> (רשימת קבצים שגיט מתעלם מהם) ורישיון אם הפרויקט ציבורי.</p><p>חשוב: ריפו <b>ציבורי</b> נראה לכל העולם. ריפו <b>פרטי</b> נראה רק למי שהוזמן. נתוני הארגון והלקוחות שייכים לריפו פרטי.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/repo.jpg"><source src="media/repo.mp4" type="video/mp4"></video></div><p class="vcap">יצירת ריפו חדש בממשק האמיתי של GitHub.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>בפינה הימנית העליונה לוחצים על + ובוחרים <b>New repository</b>.</div></li><li><div>בשדה Repository name מקלידים שם באנגלית, בלי רווחים, למשל <code>sales-dashboard</code>.</div></li><li><div>בוחרים Visibility: Public או Private.</div></li><li><div>מפעילים Add README. אפשר גם לבחור תבנית .gitignore מהרשימה.</div></li><li><div>לוחצים <b>Create repository</b>.</div></li></ol></section>
 <section class="blk expect"><h3>מה אמור לקרות</h3><p>נפתח דף הריפו: שם הריפו למעלה, רשימת קבצים (README.md) באמצע, ומתחתיה התוכן של ה-README מוצג כטקסט מעוצב. הכתובת היא <code>github.com/שם-המשתמש/sales-dashboard</code>.</p></section>
 <section class="blk ex"><h3>תרגיל</h3><p>צרו ריפו פרטי בשם <code>git-practice</code> עם README. ערכו את ה-README ישירות באתר (סמל העיפרון), הוסיפו שורה, ושמרו (Commit changes). בדקו שהקומיט מופיע ברשימת ההיסטוריה.</p></section>
@@ -145,7 +145,7 @@ git config --global user.email &quot;you@example.com&quot;</code></pre></div></l
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>יש לכם תיקייה עם קבצי פרויקט ורוצים לשמור היסטוריה של שינויים, גם בלי חיבור לגיטהאב.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p>בגיט יש שלושה מקומות: <b>תיקיית העבודה</b> (הקבצים שאתם עורכים), <b>Staging</b> (מה שבחרתם לשמור עכשיו) ו<b>היסטוריה</b> (הקומיטים). <code>git add</code> מעביר ל-Staging, ו-<code>git commit</code> שומר מה שב-Staging כקומיט.</p><p>הפקודה הכי שימושית היא <code>git status</code>: היא אומרת מה השתנה ומה מחכה לשמירה. הריצו אותה לפני כל פעולה.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/local.jpg"><source src="media/local.mp4" type="video/mp4"></video></div><p class="vcap">פקודות git אמיתיות שהורצו בסביבת בדיקה (לא צילום מסך של מסך המשתמש).</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>יוצרים תיקייה ומאתחלים בה ריפו:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>mkdir demo &amp;&amp; cd demo
 git init</code></pre></div></li><li><div>יוצרים קובץ ובודקים מצב:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>echo &quot;# Demo&quot; &gt; README.md
 git status</code></pre></div></li><li><div>מוסיפים ל-Staging ושומרים קומיט עם הודעה:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>git add README.md
@@ -196,7 +196,7 @@ git commit -m &quot;Fix returns measure&quot;</code></pre></div></li><li><div>ב
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>סיימתם לתקן מדד בענף. לפני שזה נכנס ל-main, חבר לצוות צריך לראות מה שונה ולאשר.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Pull Request (PR)</b> הוא בקשה למזג ענף לתוך ענף אחר, בדרך כלל main. הוא מציג את כל ההבדלים שורה אחר שורה, ומקום לדיון.</p><p>כותרת ותיאור טובים חוסכים שאלות: מה שונה, למה, ואיך בדקתם.</p><p>אפשר לפתוח <b>Draft PR</b> (טיוטה) כשהעבודה עוד לא מוכנה לסקירה.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/pr.jpg"><source src="media/pr.mp4" type="video/mp4"></video></div><p class="vcap">פתיחת Pull Request בממשק האמיתי.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>אחרי שדחפתם ענף, פותחים את דף הריפו באתר ולוחצים על הכפתור <b>Compare &amp; pull request</b>.</div></li><li><div>בודקים שהבסיס (base) הוא main ושההשוואה (compare) היא הענף שלכם.</div></li><li><div>כותבים כותרת ותיאור. אפשר לציין <code>Fixes #12</code> כדי לסגור משימה אוטומטית כשהכל ימוזג (פרק 10).</div></li><li><div>בוחרים Reviewers ברשימה בצד ימין.</div></li><li><div>לוחצים <b>Create pull request</b>. כדי לפתוח טיוטה, בוחרים בחץ ליד הכפתור את Create draft pull request.</div></li></ol></section>
 <section class="blk expect"><h3>מה אמור לקרות</h3><p>נפתח דף ה-PR עם מספר (למשל #3), לשוניות Conversation, Commits, Files changed, וכפתור ירוק בתחתית שמסמן שאפשר למזג, אם אין קונפליקטים. בלשונית Files changed רואים שורות ירוקות שנוספו ואדומות שנמחקו.</p></section>
 <section class="blk ex"><h3>תרגיל</h3><p>פתחו PR מהענף add-notes אל main בריפו git-practice, כתבו תיאור בשלוש שורות: מה, למה, איך בדקתי. אל תמזגו עדיין.</p></section>
@@ -208,7 +208,7 @@ git commit -m &quot;Fix returns measure&quot;</code></pre></div></li><li><div>ב
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>חבר לצוות סקר את ה-PR והעיר הערה. אחרי התיקון מאשרים וממזגים, ובמקרה שמישהו שינה את אותו קובץ בו-זמנית, פותרים קונפליקט.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p>סוקר יכול לכתוב <b>Comment</b>, <b>Approve</b> או <b>Request changes</b>.</p><p>יש שלוש דרכי מיזוג: <b>Merge commit</b> שומר את כל הקומיטים ומוסיף נקודת מיזוג. <b>Squash and merge</b> מאחד את כל הקומיטים לאחד, והוא מתאים כשה-PR הוא שינוי לוגי אחד. <b>Rebase and merge</b> מוסיף את הקומיטים בקו ישר.</p><p><b>קונפליקט</b> קורה כששני ענפים שינו אותן שורות. גיט לא מחליט במקומכם, והוא מסמן את המקום וממתין שתבחרו.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/merge.jpg"><source src="media/merge.mp4" type="video/mp4"></video></div><p class="vcap">מיזוג ה-PR וסגירת ה-Issue אוטומטית.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>הסוקר נכנס ללשונית Files changed, לוחץ על + ליד שורה וכותב הערה. בסוף לוחץ Review changes ובוחר Approve או Request changes.</div></li><li><div>אתם מתקנים בענף עצמו. כל קומיט חדש שנדחף נכנס אוטומטית ל-PR:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>git add .
 git commit -m &quot;Address review comments&quot;
 git push</code></pre></div></li><li><div>כשהכל מאושר, לוחצים <b>Merge pull request</b> (או Squash and merge דרך החץ), ואז <b>Confirm</b>.</div></li><li><div>אחרי המיזוג לוחצים Delete branch, ומעדכנים את המחשב:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>git switch main
@@ -224,7 +224,7 @@ git merge main</code></pre></div></li></ol></section>
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>בצוות יש רשימת תיקונים ורעיונות בוואטסאפ ובמיילים. מרכזים אותם במקום אחד עם אחראי, תוויות ותאריך.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Issue</b> הוא משימה, באג או שאלה שמנוהלת בתוך הריפו. לכל Issue יש מספר (#12), כותרת, תיאור ותגובות.</p><p>מוסיפים לו <b>Labels</b> (תוויות), <b>Assignees</b> (אחראים), <b>Milestone</b> (יעד) ואפשר גם לקשר אותו ל-Project.</p><p>קישור לקוד: אם התיאור של ה-PR כולל <code>Fixes #12</code>, מיזוג ה-PR סוגר את ה-Issue אוטומטית. המילים שעובדות הן closes, fixes ו-resolves וצורותיהן.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/issues.jpg"><source src="media/issues.mp4" type="video/mp4"></video></div><p class="vcap">פתיחת Issue בממשק האמיתי.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>בדף הריפו נכנסים ללשונית <b>Issues</b> ולוחצים New issue.</div></li><li><div>כותבים כותרת, למשל "המדד Returns מחזיר ערך שלילי". בתיאור מפרטים מה ראיתם, מה ציפיתם, ואיך משחזרים.</div></li><li><div>בצד ימין: בוחרים Assignee, Labels (bug) ו-Milestone.</div></li><li><div>לוחצים Submit new issue. הוא מקבל מספר.</div></li><li><div>כשפותחים PR שמתקן אותו, כותבים בתיאור:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>Fixes #1</code></pre></div></li></ol></section>
 <section class="blk expect"><h3>מה אמור לקרות</h3><p>הדף של ה-Issue מציג סטטוס Open, את התוויות והאחראי. אחרי מיזוג PR עם <code>Fixes #1</code> ה-Issue עובר ל-Closed אוטומטית, ובציר הזמן מופיעה שורה שמציינת איזה PR סגר אותו.</p></section>
 <section class="blk ex"><h3>תרגיל</h3><p>פתחו ב-git-practice שני Issues עם תוויות, אחד מהם עם Assignee. אחר כך פתחו PR שמתקן את אחד מהם עם Fixes ומספר, ומזגו. ודאו שהוא נסגר.</p></section>
@@ -248,7 +248,7 @@ git merge main</code></pre></div></li></ol></section>
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>מצטרף חדש לצוות, ובנוסף אתם רוצים תרומה לפרויקט פתוח שאין לכם בו הרשאת כתיבה.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Collaborator</b> הוא אדם שהזמנתם לריפו אישי, והוא מקבל גישה לעבוד בו. בארגון מנהלים הרשאות דרך <b>צוותים (Teams)</b>.</p><p><b>Fork</b> הוא עותק של ריפו בחשבון שלכם, שנשאר מקושר למקור. עובדים על ה-Fork ופותחים PR אל המקור. כך תורמים לפרויקט שאין לכם בו הרשאת כתיבה.</p><p><b>CODEOWNERS</b> הוא קובץ שמגדיר מי אחראי על אילו קבצים, וגיטהאב מבקש מהם לסקור PRs שנוגעים בהם. למשל: מי שמאשר שינויים בתיקיית המודל.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/collab.jpg"><source src="media/collab.mp4" type="video/mp4"></video></div><p class="vcap">איפה מזמינים משתפי פעולה (ללא שליחת הזמנה).</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>הזמנת שותף לריפו אישי: Settings, Collaborators, Add people, ומקלידים את שם המשתמש. הוא יקבל הזמנה שצריך לאשר.</div></li><li><div>Fork: בדף של ריפו אחר לוחצים Fork, ובוחרים את החשבון שלכם. מקבלים עותק בחשבון שלכם.</div></li><li><div>משכפלים את ה-Fork, פותחים ענף, עושים שינוי ודוחפים. פותחים Pull Request מה-Fork אל הריפו המקורי.</div></li><li><div>קובץ CODEOWNERS ב-<code>.github/CODEOWNERS</code> של הריפו:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code># הצוות שמאשר שינויים במודל
 /SalesReport.SemanticModel/ @my-org/bi-team
 *.md @maya-cohen</code></pre></div></li></ol></section>
@@ -262,7 +262,7 @@ git merge main</code></pre></div></li></ol></section>
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>בכל פעם שמישהו דוחף שינוי, רוצים שמשהו ייבדק לבד, למשל שקובץ מסוים קיים או שהפרויקט נבנה, בלי שמישהו יזכור להריץ.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Actions</b> היא מערכת אוטומציה של גיטהאב. מגדירים <b>Workflow</b> בקובץ YAML בתיקייה <code>.github/workflows</code>. הקובץ אומר מה מפעיל אותו (<code>on</code>), על איזה שרת הוא רץ (<code>runs-on</code>) ומה השלבים (<code>steps</code>).</p><p>ה-Workflow רץ על שרת ש-GitHub מספק. Actions חינמי בריפואים ציבוריים. בריפואים פרטיים יש מכסת דקות חינמית ומעבר לה יש חיוב, ולכן בדקו את התוכנית לפני שמפעילים הרבה.</p><p>אפשר להתחיל מתבנית מוכנה בלשונית Actions, ולהתאים אותה.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/actions.jpg"><source src="media/actions.mp4" type="video/mp4"></video></div><p class="vcap">יצירת workflow והרצה ראשונה, בממשק האמיתי.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>בדף הריפו לוחצים Add file, ואז Create new file, ונותנים את השם <code>.github/workflows/demo.yml</code>.</div></li><li><div>מדביקים:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>name: Demo
 on: [push]
 jobs:
@@ -282,7 +282,7 @@ jobs:
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>רוצים דף אינטרנט פשוט, למשל סיכום דוח, מדריך פנימי או דף נחיתה, בלי לשכור שרת.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Pages</b> לוקח קבצי HTML, CSS ו-JavaScript מהריפו ומפרסם אותם כאתר. אפשר גם להריץ תהליך בנייה לפני.</p><p>האתר <b>ציבורי לכולם</b> ברשת, גם אם הריפו פרטי (כשהתוכנית מאפשרת). אל תפרסמו שם מידע רגיש. בחשבון Free (אישי או ארגון) הריפו חייב להיות ציבורי.</p><p>אתר שנקרא <code>USER.github.io</code> הוא אתר המשתמש. בכל ריפו אחר הכתובת היא <code>USER.github.io/REPO</code>.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/pages.jpg"><source src="media/pages.mp4" type="video/mp4"></video></div><p class="vcap">הפעלת Pages מהענף main.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>בריפו ציבורי מוסיפים קובץ <code>index.html</code>:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>&lt;!doctype html&gt;
 &lt;html lang=&quot;he&quot; dir=&quot;rtl&quot;&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -298,7 +298,7 @@ jobs:
 
 <section class="blk use"><h3>מקרה שימוש</h3><p>מישהו הדביק בטעות מפתח גישה בקובץ ודחף אותו, או שמישהו דחף שינוי ישירות ל-main בלי שאף אחד ראה.</p></section>
 <section class="blk"><h3>מה צריך להבין</h3><p><b>Personal Access Token (PAT)</b> הוא מפתח שמחליף סיסמה בסקריפטים ובכלים. גיטהאב ממליץ על <b>Fine-grained tokens</b>: בוחרים ריפואים מסוימים, הרשאות מינימליות ותפוגה. שמרו אותו כמו סיסמה, והוא מוצג פעם אחת בלבד.</p><p><b>סודות (Secrets)</b> לא נכתבים בקוד. מוסיפים אותם בהגדרות הריפו ומשתמשים בהם ב-Workflows. גיטהאב לא מצנזר סוד שמודפס בלוג בדרכים עקיפות, לכן לא מדפיסים אותו.</p><p><b>Secret scanning</b> סורק את כל ההיסטוריה בחיפוש סודות, והוא פועל כברירת מחדל בריפואים ציבוריים.</p><p><b>Rulesets</b> מגדירים חוקים על ענפים, למשל לחייב Pull Request ואישור לפני מיזוג ל-main. כך אי אפשר לדחוף ישירות.</p><p>סוד שנחשף כבר נחשב דלוף. מבטלים (Revoke) אותו מיד ויוצרים חדש, ולא מסתפקים במחיקה מהקובץ.</p></section>
-
+<h3>הדגמה על הממשק האמיתי</h3><div class="vbox"><video autoplay muted loop controls playsinline preload="auto" poster="media/security.jpg"><source src="media/security.mp4" type="video/mp4"></video></div><p class="vcap">טופס Token (לא נשלח), Secrets ו-Rulesets: צפייה בלבד.</p>
 <section class="blk"><h3>צעד אחר צעד</h3><ol class="steps"><li><div>יצירת טוקן: תמונת הפרופיל, Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token.</div></li><li><div>נותנים שם, בוחרים תפוגה קצרה, ב-Repository access בוחרים ריפואים מסוימים בלבד, ובהרשאות רק את הנדרש (למשל Contents: Read).</div></li><li><div>לוחצים Generate token, ומעתיקים אותו מיד לכספת סיסמאות. אחרי שסוגרים את הדף לא רואים אותו שוב.</div></li><li><div>סוד ל-Workflow: בריפו Settings, Secrets and variables, Actions, New repository secret. ב-Workflow מפנים אליו כך:</div><div class="code"><button type="button" class="copy" aria-label="העתקה">העתקה</button><pre dir="ltr"><code>env:
   API_KEY: ${{ secrets.API_KEY }}</code></pre></div></li><li><div>הגנה על main: ב-Settings של הריפו פותחים את Rules ואת Rulesets, יוצרים ruleset חדש שמכוון לענף main ומפעילים חוק שמחייב Pull Request לפני מיזוג. זמינות הפיצ׳ר בריפו פרטי תלויה בתוכנית, ולכן בדקו מה מוצג אצלכם.</div></li></ol></section>
 <section class="blk expect"><h3>מה אמור לקרות</h3><p>בדף הטוקנים מופיע הטוקן שיצרתם עם תפוגה והרשאות. ב-Secrets מופיע שם הסוד בלי הערך. אחרי הפעלת ruleset, ניסיון push ישיר ל-main נדחה עם הודעה שהענף מוגן ושנדרש Pull Request.</p></section>
