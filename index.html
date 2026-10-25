@@ -605,8 +605,9 @@ addEventListener('scroll',function(){if(!h.classList.contains('v-ch'))return;
 function pv(){[].forEach.call(d.querySelectorAll('.on video, .v-home .hero-vid video'),function(v){v.muted=true;v.setAttribute('playsinline','');var p=v.play();if(p&&p.catch)p.catch(function(){})})}
 addEventListener('hashchange',function(){setTimeout(pv,150)});addEventListener('load',pv);d.addEventListener('touchstart',pv,{once:true,passive:true});
 var q=d.getElementById('q');
-if(q)q.addEventListener('input',function(){var s=q.value.trim();var any=false;
- [].forEach.call(d.querySelectorAll('.cc,.term'),function(el){var hit=!s||el.textContent.indexOf(s)>-1;el.classList.toggle('hidden-by-search',!hit);if(hit&&el.classList.contains('cc'))any=true});
+function norm(s){return s.replace(/ך/g,'כ').replace(/ם/g,'מ').replace(/ן/g,'נ').replace(/ף/g,'פ').replace(/ץ/g,'צ').toLowerCase()}
+if(q)q.addEventListener('input',function(){var s=norm(q.value.trim());var any=false;
+ [].forEach.call(d.querySelectorAll('.cc,.term'),function(el){var hit=!s||norm(el.textContent).indexOf(s)>-1;el.classList.toggle('hidden-by-search',!hit);if(hit&&el.classList.contains('cc'))any=true});
  var nr=d.getElementById('no-res');if(nr)nr.style.display=(s&&!any)?'block':'none'});
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:.05});
  [].forEach.call(d.querySelectorAll('.rv'),function(el){io.observe(el)})}
